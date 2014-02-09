@@ -1,0 +1,12 @@
+
+- content_for(:title, "The Discover Meteor Blog – Meteor tutorials, articles, and case studies")
+
+.page-title
+  %h2.no-margin
+    %a{:href => '/blog'} Discovering Meteor
+  %p.intro The Discover Meteor Blog
+.blog-archive
+  .blog-articles
+    %h4.blog-header Latest Articles
+    - page_articles.each do |post|
+      %h3=post.title

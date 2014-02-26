@@ -1,6 +1,10 @@
 require 'active_support/inflector'
 require 'sanitize'
 
+ignore '*.md'
+ignore 'something.md'
+ignore 'source/blog/something.md'
+
 ###
 # Blog settings
 ###
